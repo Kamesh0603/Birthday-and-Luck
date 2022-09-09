@@ -1,38 +1,134 @@
-.App {
+body{
+  background-color: black;
+  background-image: linear-gradient(black,purple,rgb(211, 148, 13) ,rgb(219, 31, 31) ,
+  rgb(211, 148, 13)  ,rgb(219, 31, 31) ,rgb(211, 148, 13) , purple,black);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+.parentContainer{
+  width:70%;
+  height:80vh;
   text-align: center;
+  box-sizing: border-box;
+  margin: 0vh 15% 10vh 15%;
+  background-image: repeating-linear-gradient(to bottom,sandybrown,turquoise,sandybrown);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  margin: 7% 0px 5% 0px;
+  font-size:xx-large;
+ 
 }
+.leftouts{
+  font-size: 22px;
+  margin: 2.5vh 0px;
+}
+input{
+  width: 30%;
+  height: 5vh;
+  font-size: 17px;
+  margin: 2.5vh 0px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg,white,black,black);
+  color: antiquewhite;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+  
+}
+button{
+  margin: 2.5vh 0px 5vh 0px;
+  border-radius: 5px;
+  width: 15%;
+  height: 5vh;
+  font-size: 18px;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+#output{
+  margin: 1.5vh 0px 5vh 0px;
+  font-size: 28px;
+  color: rgb(38, 0, 73);
+  font-weight: 600;
+  animation-name: example2;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction:normal;
+  animation-iteration-count: infinite;
+ 
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 12.5vh;
+  margin: 0px;
+  
+}
+.footer{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: overline;
+  width: 100%;
+  margin: 10px 0px;
+
+}
+@keyframes example{
+  0%{
+    background-color: black;
+    color: white;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  25%{
+    background-color: goldenrod;
+    color: black;
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+    background-color: black;
+    color: white;
+
   }
+  75%{
+    background-color: goldenrod;
+    color: black;
+  }
+  100%{
+    background-color: black;
+    color: white;
+
+  }
+  
 }
+
+/*@keyframes example2{
+  0%{
+    color: rgb(6, 49, 0);
+    font-weight: 700;
+
+  }
+  25%{
+    color: rgb(23, 194, 0);
+    font-weight: 700;
+  }
+  50%{
+    color: rgb(6, 49, 0);
+    font-weight: 700;
+
+
+  }
+  75%{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+
+
+  }
+  100%{
+    color: rgb(31, 218, 6);
+    font-weight: 700;
+
+
+  }
+  
+}
+*/
