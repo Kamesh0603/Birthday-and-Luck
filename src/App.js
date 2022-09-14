@@ -22,8 +22,12 @@ function luckdecider(){
 });
   console.log(fullnewdob);
   console.log(sum);
+
   if(parseInt(luckyno)<=0){
     output.innerText=`Please stay positive!`;
+  }
+  else if(userDOB=="" || luckyno == ""){
+    output.innerText = "Please select a date and number"
   }
   else if((sum/parseInt(luckyno))%1===0){
     output.innerText=`💥 Magic 8-ball says ${luckyno} is your lucky number! 💥 `;
